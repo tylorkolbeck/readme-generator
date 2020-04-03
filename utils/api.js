@@ -1,5 +1,4 @@
 const axios = require("axios")
-require("dotenv").config()
 
 const api = {
   queryString: "https://api.github.com/users/",
