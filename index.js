@@ -17,7 +17,7 @@ async function init() {
   let markdown = generateMarkdown({
     ...answers,
     email: data.email,
-    avatar: data.avatar_url
+    avatar: data.avatar_url,
   })
 
   await writeFile(
@@ -29,7 +29,7 @@ async function init() {
     markdown
   )
     .then(() => console.log("write complete"))
-    .catch(err => console.log("Error", err))
+    .catch((err) => console.log("Error", err))
 }
 
 init()
