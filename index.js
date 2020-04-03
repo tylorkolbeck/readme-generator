@@ -5,16 +5,69 @@ const path = require("path");
 const api = require("./utils/api");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: import api and generateMarkdown modules from ./utils/
+inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "username",
+      message: "Github user?"
+    },
+    {
+      type: "input",
+      name: "title",
+      message: "Project Title?"
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Project Description?"
+    },
+    {
+      type: "input",
+      name: "install",
+      message: "Install Command?",
+      default: "npm install"
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Usage?",
+      default: "npm start"
+    },
+    {
+      type: "list",
+      name: "license",
+      message: "License",
+      choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+    },
+    {
+      type: "input",
+      name: "Contributing",
+      message: "Contributers?"
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Tests Command?",
+      default: "npm test"
+    },
+    {
+      type: "input",
+      name: "What does your user need to know to use the repo?",
+      message: ""
+    }
+  ])
+  .then(answers => {
+    // Use user feedback for... whatever!!
+  })
+  .catch(error => {
+    if (error.isTtyError) {
+      // Prompt couldn't be rendered in the current environment
+    } else {
+      // Something else when wrong
+    }
+  });
 
-// TODO: Add inquirer question objects to questions array. This should
-// include all the necessary questions for the user.
-// Example question:
-// {
-//   type: "input",
-//   name: "github",
-//   message: "What is your GitHub username?"
-// }
 const questions = [];
 
 // TODO: Write function to synchronously write data in the
