@@ -1,8 +1,5 @@
-// TODO: import axios module
-
-// TODO: use dotenv module to get environmental variables if necessary
-
-// TODO: do not make a commit with GitHub api key or access token in any file. (Only applies if your app uses access tokens or api keys.)
+const axios = require("axios");
+const dotenv = require("dotenv");
 
 const api = {
   // TODO: Return promise for GitHub api response to get user data.
