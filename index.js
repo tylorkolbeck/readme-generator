@@ -1,4 +1,9 @@
-// TODO: import fs, path and inquirer modules
+const fs = require("fs");
+const inquirer = require("inquirer");
+const path = require("path");
+
+const api = require("./utils/api");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: import api and generateMarkdown modules from ./utils/
 
@@ -15,15 +20,12 @@ const questions = [];
 // TODO: Write function to synchronously write data in the
 // current working directory to file named for the fileName parameter.
 // The data parameter is the text to write to the file.
-function writeToFile(fileName, data) {
-}
+function writeToFile(fileName, data) {}
 
 // TODO: Use inquirer to prompt the user for each question in the
 // questions array. Then call api.getUser to fetch the user profile
 // data from GitHub. Finally generate the markdown and use writeToFile
 // to create the README.md file.
-function init() {
-
-}
+function init() {}
 
 init();
