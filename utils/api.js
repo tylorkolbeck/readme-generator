@@ -16,7 +16,7 @@ const api = {
   }
 };
 
-api.getUser("tylorkolbeck").then(res => console.log(res));
+// api.getUser("tylorkolbeck").then(res => console.log(res));
 
 module.exports = api;
 
