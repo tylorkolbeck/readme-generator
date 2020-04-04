@@ -34,6 +34,8 @@ The readme will be generated and then put into the /readme_files directory. It w
 
 ## Example Usage
 
+An example of a generated readme file is located in the /readme_files directory
+
 ![](assets/gif1.gif)
 
 ![](assets/gif2.gif)
