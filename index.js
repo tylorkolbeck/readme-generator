@@ -21,7 +21,7 @@ async function init() {
   })
 
   await writeFile(
-    `assets/${
+    `readme_files/${
       answers.title
         ? answers.title
         : `${moment().format("MM-DD-YYYY-h:mm:ss")}-markdown`
